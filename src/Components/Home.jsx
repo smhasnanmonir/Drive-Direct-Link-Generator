@@ -28,6 +28,8 @@ const Home = () => {
     let sliceLink = "";
     if (inputValue.endsWith("g")) {
       sliceLink = inputValue.slice(32, -17);
+    } else if (inputValue.endsWith("view")) {
+      sliceLink = inputValue.slice(32, -5);
     } else {
       sliceLink = inputValue.slice(32, -20);
     }
